@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret</title>
+    <style>
+        body {
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #bda4eb;
+            text-align: center;
+        }
+        button, a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 10px;
+            transition: transform 0.2s;
+            text-decoration: none;
+        }
+
+        button {
+            background-color: #814edf;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .H1{
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="padding-top: 6cm;">
+        <img src="img/2.gif" alt="" style="width: 170px; height: 150px;">
+    </div>
+    <div>
+        <H1 class="H1">Asik, Yaudah ni mau hadiah buat kamu mau ga???</H1>
+        <div>
+            <button onclick="jawaban('ya')">Yes</button>
+            <button onclick="ubahTeks()">No</button>
+        </div>    
+    </div>
+   
+    <script>
+        function jawaban(pilihan) {
+            window.location.href = "Amplop.html";
+        }
+
+        function ubahTeks() {
+            var tombolTidak = document.querySelector('button:nth-child(2)');
+            var tombolYes = document.getElementById('yesButton');
+            
+            tombolTidak.innerText = 'Lah';
+            document.querySelector('button:nth-child(1)').style.transform = 'scale(1.1)';
+
+            tombolTidak.onclick = function() {
+                tombolTidak.innerText = 'Mencet ini lagi?';
+                document.querySelector('button:nth-child(1)').style.transform = 'scale(1.2)';
+
+                tombolTidak.onclick = function() {
+                    tombolTidak.innerText = 'Kanapaaa';
+                    document.querySelector('button:nth-child(1)').style.transform = 'scale(1.3)';
+
+                    tombolTidak.onclick = function() {
+                        tombolTidak.innerText = 'Haaaaa';
+                        document.querySelector('button:nth-child(1)').style.transform = 'scale(1.4)';
+
+                        tombolTidak.onclick = function() {
+                            tombolTidak.innerText = 'Atuuu';
+                            document.querySelector('button:nth-child(1)').style.transform = 'scale(1.5)';
+
+                            tombolTidak.onclick = function() {
+                                tombolTidak.innerText = 'Senggg';
+                                document.querySelector('button:nth-child(1)').style.transform = 'scale(1.6)';
+
+                                tombolTidak.onclick = function() {
+                                    tombolTidak.innerText = 'Naon ih';
+                                    document.querySelector('button:nth-child(1)').style.transform = 'scale(1.7)';
+
+                                    tombolTidak.onclick = function() {
+                                        tombolTidak.innerText = 'awas weh';
+                                        document.querySelector('button:nth-child(1)').style.transform = 'scale(1.8)';
+                                        
+                                        tombolTidak.onclick = function() {
+                                            tombolTidak.innerText = 'Aku paksa';
+                                            document.querySelector('button:nth-child(1)').style.transform = 'scale(1.9)';
+
+                                                tombolTidak.onclick = function() {
+                                                    tombolTidak.innerText = 'Yes';
+                                                    document.querySelector('button:nth-child(1)').style.transform = 'scale(1)' 
+
+                                                    tombolTidak.onclick = function() {
+                                                        tombolTidak.innerText = 'Yes';
+                                                        document.querySelector('button:nth-child(1)').style.transform = 'scale(1)';
+                                                        window.location.href = "Amplop.html"
+                                                };
+                                            }; 
+                                        };
+                                    };
+                                };
+                            };
+                        };
+                    };
+                };
+            };
+        }
+    </script>
+</body>
+</html>
